@@ -13,19 +13,25 @@ then upon pressing a push button the data is encrypted and sent to the other rec
 ## Modules
 
 
-Transmission Module: This module contains the rate at which the data will be sent at by the sender, and the rate at which the receiver will be receiving and reading from the pin. This module is setup as a finite state machine to send each individual bit sequentially and is sending and receiving asynchronously. The sender sends the data at a baud rate of 9600 bits/sec to a pin
+###### Transmission Module
+
+This module contains the rate at which the data will be sent at by the sender, and the rate at which the receiver will be receiving and reading from the pin. This module is setup as a finite state machine to send each individual bit sequentially and is sending and receiving asynchronously. The sender sends the data at a baud rate of 9600 bits/sec to a pin
 on the receiver end. The receiving board then transfers the data coming into one pin and pushes it to another pin to remove any noise and interference and enables the value of the the bit to be read correctly. The receiver reads at twice the rate the sender is sending at. This allows the receiver to sample in the middle of each bit interval into an 8 bit register. This 8 bit register is then used to decrypt the encrypted message and get back the original message. 
 
 
 
-Encrypted Module: This module contains an LFSR algorithm that will generate an output value that is implemented in both the sender and receiver module. The way it work from the sender’s perspective  is that the sender will first generate a random value using the LFSR algorithm; this
+###### Encrypted Module
+
+This module contains an LFSR algorithm that will generate an output value that is implemented in both the sender and receiver module. The way it work from the sender’s perspective  is that the sender will first generate a random value using the LFSR algorithm; this
 is the encryption key. The encryption key is the   XOR’d with the  message, thus creating the encrypted message that the sender will be sending to the receiver.
 
 
 From the receiver’s perspective, the receiver will then read the encrypted message and generate the decryption key on the receiver’s board. This decryption key is then used against the encrypted message, the message sent by the sender,  to get back the original message. Now, the board is able to display the encrypted message and the original message received by the sender. The receiver is now able to send back the original message to the sender’s board by clicking push button 3. This will allow the sender to authenticate if the encrypted message that the receiver decrypted was the correct original message. If the encrypted message was decrypted correctly, then the sender’s board will display a ‘Pass’, otherwise the board will display a ‘Fail’.
 
 
-Timer Module: This module is used to set a timer, on the sender’s board, that will automatically count down and send the encrypted message at specific time in seconds that is  set by the user, using the dip switches. The user is able to use this feature by setting the number of seconds,
+###### Timer Module
+
+This module is used to set a timer, on the sender’s board, that will automatically count down and send the encrypted message at specific time in seconds that is  set by the user, using the dip switches. The user is able to use this feature by setting the number of seconds,
 using the dip switches, they want the countdown to start at and clicking on push button 0 which will change the display to the timer and starts counting down. Once the countdown hits 0, the message “Sd”, which stands for ‘Send’, will appear on the display and sender automatically encrypts the message to be sent and sends that message to the receiver's board. The receiver will now have the encrypted message.
 
 
@@ -96,7 +102,7 @@ We have used the oscilloscope to clock the data rates and verify the data being 
 4. Seven Segment Display shows correct messages in every state of the program.
 
 
-##Side Notes
+## Side Notes
 
 1. Wires connecting each board together must be connected to a breadboard
 2. The wires must be held tight to ensure that the connections between both boards are clean.
