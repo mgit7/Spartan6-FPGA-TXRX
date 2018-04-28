@@ -1,8 +1,3 @@
-
-
-Final Project Report
-
-
 ## Introduction
 
 For this project we  have implemented two boards that will be sending and receiving encrypted and decrypted messages. The sender will send the data and the receiver will receive the data on two different pins. On the sender side, the data is taken in using the dip switches and
