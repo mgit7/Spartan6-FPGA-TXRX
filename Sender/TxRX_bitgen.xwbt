@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\XilinxProjects\FinalProject\UARTVara\TxRX.ncd
+OUTFILE=C:\Xilinx\XilinxProjects\FinalProject\UARTVara\TxRX.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Xilinx\XilinxProjects\FinalProject\UARTVara
+LICENSE=WebPack
+USER_INFO=211097576_0_0_710

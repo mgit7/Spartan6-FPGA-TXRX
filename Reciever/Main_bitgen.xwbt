@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Spring 2017\Compe 470L\470L\FinalProject\Main.ncd
+OUTFILE=F:\Spring 2017\Compe 470L\470L\FinalProject\Main.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=F:\Spring 2017\Compe 470L\470L\FinalProject
+LICENSE=WebPack
+USER_INFO=211230682_0_0_470

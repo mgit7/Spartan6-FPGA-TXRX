@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            04/24/2017 - 19:05
+SOURCE          F:\Spring 2017\Compe 470L\470L\FinalProject\fpga.mcs
+DEVICE          512K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x02D31314
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "F:/Spring 2017/Compe 470L/470L/FinalProject/main.bit" 6slx9tqg144

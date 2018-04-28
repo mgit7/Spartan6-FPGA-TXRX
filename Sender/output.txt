@@ -1,0 +1,10 @@
+Storage Target: SPI Flash Single FPGA
+4M
+FF
+fpga
+C:/Xilinx/XilinxProjects/LabTX_RXTest
+
+MCS
+No
+
+No

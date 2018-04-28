@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Xilinx\XilinxProjects\LabTX_RXTest\impact.xsl
+OUTFILE=C:\Xilinx\XilinxProjects\LabTX_RXTest\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Xilinx\XilinxProjects\LabTX_RXTest
+LICENSE=iMPACT
+USER_INFO=iMPACT
