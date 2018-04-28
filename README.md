@@ -3,19 +3,19 @@
 Final Project Report
 
 
-##Introduction
+## Introduction
 
 For this project we  have implemented two boards that will be sending and receiving encrypted and decrypted messages. The sender will send the data and the receiver will receive the data on two different pins. On the sender side, the data is taken in using the dip switches and
 then upon pressing a push button the data is encrypted and sent to the other receiver board, which then decrypts and displays the information sent. We also have implemented an acknowledgment of receiving the correct data where the decrypted data is then sent back to the sender and checked against the original message  It then compares the values and displays ‘Pass’ or ‘Fail’;  if the data matches or doesn’t match, respectively.
 
 
-##Design
+## Design
  
 
 ![](https://github.com/mgit7/Spartan6E-FPGA/blob/master/Design.jpg)
 
 
-##Modules
+## Modules
 
 
 Transmission Module: This module contains the rate at which the data will be sent at by the sender, and the rate at which the receiver will be receiving and reading from the pin. This module is setup as a finite state machine to send each individual bit sequentially and is sending and receiving asynchronously. The sender sends the data at a baud rate of 9600 bits/sec to a pin
